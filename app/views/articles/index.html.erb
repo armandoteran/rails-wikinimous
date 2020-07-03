@@ -1,0 +1,20 @@
+<div class="navbar-light bg-light mb-3">
+  <div class="navbar-container">
+    <div class="link-div mt-0">
+      <a class="navbar-brand" href="">Wikinimous</a>
+    </div>
+    <div class="link-div mt-0">
+      <a class="navbar-brand" href="">New article</a>
+    </div>
+  </div>
+</div>
+
+<div class="content">
+
+  <% @articles.each do |article| %>
+  <h2><%= article.title %></h2>
+  <%= article.content %>
+  <% end %>
+
+</div>
+
