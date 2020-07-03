@@ -12,10 +12,11 @@ puts 'database is clean'
 
 puts 'creating article'
 
-10.times
-Article.create!(
-  title: Faker::TvShows::Simpsons.character,
-  content: Faker::TvShows::Simpsons.quote
-)
+10.times do
+  Article.create!(
+    title: Faker::TvShows::Simpsons.character,
+    content: Faker::TvShows::Simpsons.quote
+  )
+end
 
 puts 'articles created'
