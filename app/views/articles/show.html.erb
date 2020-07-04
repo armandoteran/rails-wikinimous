@@ -7,7 +7,11 @@
         <div class="content-div">
           <h1 class="h1-show">
             <%= @article.title %>
-            <i class="fa fa-pencil" aria-hidden="true"></i>
+
+            <%= link_to edit_article_path(@article) do %>
+            <i class="fa fa-pencil"></i>
+            <% end %>
+
             <i class="fa fa-trash" aria-hidden="true"></i>
           </h1>
           <hr>
