@@ -12,7 +12,10 @@
             <i class="fa fa-pencil"></i>
             <% end %>
 
+            <%= link_to article_path(@article), method: :delete, data: {confirm: "Are you sure?"}, class:"text-danger" do%>
             <i class="fa fa-trash" aria-hidden="true"></i>
+            <% end %>
+
           </h1>
           <hr>
           <%= @article.content %>
